@@ -1,0 +1,266 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    
+    
+}
+
+#main-section{
+background:linear-gradient(orange, green);
+height:370rem;
+}
+
+.headings{
+    text-decoration: underline;
+    font-size:12rem;
+    font-weight:bold;
+    text-transform:uppercase;
+    text-align:center;
+    margin-bottom:8rem;
+}
+
+/*Intro Section*/
+
+#intro{
+    margin-bottom:10rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+#logo{
+    height:95rem;
+    width:95rem;
+    border-radius:50%;
+    align-items: center;
+    margin-bottom:10rem;
+    border:2rem dashed black;
+    margin-top:14rem;
+    margin-bottom:12rem;
+    
+}
+
+
+#header-1{
+    margin-bottom:10rem;
+}
+
+
+.get-started-btn{
+    height:18rem;
+    width:50rem;
+    border-radius: 4rem;
+    margin: 0 auto;
+    border:0.8rem solid black;
+    font-size:6rem;
+    font-weight:bold;
+    color:black;
+    cursor:pointer;
+    background-color: rgb(131, 131, 192);
+}
+
+.get-started-btn:hover{
+    background-color: green;
+}
+
+
+
+
+/*Features Section */
+
+#features-section{
+    
+    
+    display:flex;
+    flex-direction:column;
+    
+}
+
+#features-header{
+    font-size:12rem;
+    
+}
+
+#features-list{
+    list-style-type:disc; 
+    text-align: center;
+    justify-content: center;
+    margin-bottom:20rem;
+}
+
+.feature-items{
+    font-size:7rem;
+    margin-bottom:2rem;
+}
+
+
+
+/*End of Features Section*/
+
+
+
+/*How It Works Section */
+#how-it-works{
+    margin-bottom:10rem;
+    text-align: center;
+    align-items: center;
+}
+
+#how-it-works-container{
+    display:flex;
+    justify-content: center;
+}
+.circle{
+    border-radius: 50%;
+    height:74rem;
+    width:85rem;
+    font-size:7rem;
+    margin-right:5rem;
+    font-weight:500;
+    background-color: rgb(57, 139, 88);
+    justify-content: center;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    border:10px solid black;
+    
+    
+}
+
+.arrow {
+    height:12rem;
+    width:12rem;
+    margin-right:10rem;
+    margin-top:26rem;
+    align-items:center;
+}
+
+
+
+/*End of How It Works Section*/
+
+
+
+/*Testimonial Section*/
+
+#testimonials{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:linear-gradient(rgb(163, 144, 109), rgb(77, 77, 196));
+    width:100%;
+    border:10px;
+    margin:auto;
+    border-top:10px solid black;
+    
+    
+}
+
+#testimonials-header{
+    font-size:16rem;
+    margin-top:14rem;
+    margin-bottom:8rem;
+}
+
+.testimonial-ad{
+   
+ 
+   justify-content: center;
+   align-items: center;
+    display:flex;
+    border:10px solid black;
+   width:85%; 
+    margin:auto;
+    height:75rem;
+    margin-bottom:5rem;
+    text-align:center;
+
+  
+}
+
+.testimonial-img{
+    height:60rem;
+    width:60rem;
+    border:20px solid black;
+    border-radius:50%;
+    float:left;
+    margin-right:10rem;
+    margin-left:4rem;
+
+    
+}
+
+
+
+
+.testimonial-text-container{
+float:right;
+margin-top:10rem;
+}
+
+
+
+.testimonial-ad-header{
+    font-size:8rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top:3rem;
+    margin-bottom:4rem;
+}
+.testimonial-text{
+    font-size:4.5rem;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;;
+}
+
+#get-started-btn-2{
+    margin-bottom:10rem;
+    margin-top:10rem;
+    
+}
+
+
+/*End of Testemonial Section*/
+
+/*Footer Section */
+
+#footer{
+    
+    width:100%;
+    height:20rem;
+    background-color:rgb(141, 116, 87);
+    border-top:7px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+
+#footer-text{
+    font-size:5rem;
+}
+
+
+
+/*End of Footer Section */

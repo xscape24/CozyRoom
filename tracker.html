@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroTracker</title>
+    <link rel="stylesheet" href="tracker.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/1553b227c3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    
+    
+<div id="main-section">
+        <!--Navbar-->
+        <div id="navbar">
+            
+            
+            <a href="#home" class="feature-items">Home <i class="fa-solid fa-house"></i></a>
+            <a href="#to-do-list" class="feature-items">To Do List <i class="fa-solid fa-clipboard-list"></i></a>
+            <a href="#progress-tracker" id="progress-tracker-nav-item" class="feature-items">Progress Tracker <i class="fa-solid fa-spinner"></i></a>
+            <a href="#skill-history" class="feature-items">Skill History <i class="fa-solid fa-trophy"></i></a>
+            <a href="#settings" class="feature-items">Settings <i class="fa-solid fa-gear"></i></a>
+            
+            
+            
+            
+        </div>
+        
+        <!--End of Navbar-->
+        
+        
+        <section id="home">
+            <div class="box">
+                <h1 class="features-header">Home</h1>
+                <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.e</p>
+                <form action="/actionpage.php" id="skill-form">
+                    <label for="" class="skill-label">Please select a skill:</label>
+                    <select  class="skill-dropdown" placeholder="--Please select an option--">
+                        <option value="default">--Please select an option--" </option>
+                        <option value="meditation">Meditation </option>
+                        <option value="exercise">Exercise </option>
+                        <option value="reading">Reading </option>
+                        <option value="studying">Studying </option>
+                        <option value="breathwork">Breathwork </option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="" class="skill-label">Select habit frequency:</label>
+                    <select  class="skill-dropdown" placeholder="--Please select an option--">
+                        <option value="default">--Please select an option--" </option>
+                        <option value="frequency1">1/day </option>
+                        <option value="frequency2">2/day</option>
+                        <option value="frequency3">3/day </option>
+                        <option value="frequency4">4/day </option>
+                        <option value="frequency5">5/day </option>
+                        <option value="other">Other</option>
+                    </select>
+
+                     <label for="" class="skill-label">Select habit frequency:</label>
+                    <select  class="skill-dropdown" placeholder="--Please select an option--">
+                        <option value="default">--Please select an option--" </option>
+                        <option value="frequency1">1/day </option>
+                        <option value="frequency2">2/day</option>
+                        <option value="frequency3">3/day </option>
+                        <option value="frequency4">4/day </option>
+                        <option value="frequency5">5/day </option>
+                        <option value="other">Other</option>
+                    </select>
+                    
+                </form>
+                
+                <button id="continue-btn">Continue</button>
+            </div>
+        </section>
+        
+        
+        <section id="todo">
+            <div class="box">
+                <h1 class="features-header"> To Do List</h1>
+                <ul id="to-do-list">
+                    <li class="list-items"> <input type="checkbox" name="" class="checkbox" id="">test1</li>
+                    <li class="list-items"> <input type="checkbox" name="" class="checkbox"id="">test1</li>
+                    <li class="list-items"> <input type="checkbox" name="" class="checkbox"id="">test3</li>
+                </ul>
+                <button id="to-do-list-btn">&#43;                   Add an Item </button>
+                
+            </div>
+        </section>
+        
+        
+        <section id="progress-tracker">
+            <div class="box">
+                <h1 class="features-header">Progress Tracker</h1>
+                <p  class="features-subheader">Congrats, you've completed 4/10 habits. Keep going!</p>
+
+                <div id="progress-bar-container">
+                    <h1>Your Habits:</h1>
+                    <ul id="habits-list"> 
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                        
+                    </ul>
+            </div>
+        </section>
+        
+        
+        <section id="skill-history">
+            <div class="box">
+                <h1 class="features-header">Skill History <img src="assets\8348232 (1).png" alt="Image of trophy" id="trophy-img"></h1>
+                <p  class="features-subheader">Here you can review past milestones.</p>
+                <ul id="skill-history-list">
+                    <li>Learned HTML basics</li>
+                    <li>Learned how to style with CSS</li>
+                    <li>Learned how to use Javascript.</li>
+                    <li>Cooked Food</li>
+                    <li>Practiced the piano</li>
+                </ul>
+            </div>
+        </section>
+        
+        
+        <section id="settings">
+            <div class="box" id="settings-box">
+                <div id="settings-header">
+                    <h1 class="features-header">Settings  <img src="assets\563541 (1).png" alt="Settings Icon" id="settings-icon" ></h1>
+                </div>
+                
+                <div id="settings-text-container">
+            
+                    <ul id="settings-list">
+                        <li class="settings-items">Change Theme</li>
+                        <li class="settings-items" id="notification-btn">Notification Preferences</li>
+                        <li class="settings-items">Account Information</li>
+                        <li class="settings-items">Privacy Settings</li>
+                        <li class="settings-items" id="help-support-btn">Help & Support</li>
+                    </ul>
+                    <div id="settings-footer">
+                        <button id="save-changes-btn" class="settings-btn">Save Changes</button>
+                        <button id="cancel-btn"  class="settings-btn">Cancel</button>
+                    </div>
+                    
+                </div>
+            </section>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+     
+        
+        </div>
+        
+        
+        
+        
+        <footer id="footer">
+            <div id="footer-container">
+                <p id="footer-text">© 2025, Built with ❤️ by Eben Nduwimana</p>
+                
+                
+                <a href="https://www.linkedin.com/in/eben-nduwimana/">
+                    <img src="assets\hd-linkedin-square-black-icon-transparent-background-7017516949739946gsykkwdmd (1).png" id="linkedn-icon" class="contact-badge"  alt="">
+                </a>
+                <a href="https://github.com/xscape24">
+                    <img src="assets\icons8-github-30.png" id="github-icon" class="contact-badge" alt="">
+                </a>
+                
+                <a href="https://github.com/xscape24">
+                    <img src="assets\images.png" id="twitter-icon" class="contact-badge" alt="">
+                </a>
+                
+            </div>
+        </footer>
+        
+    </body>
+    </html>

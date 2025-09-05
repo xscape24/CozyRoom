@@ -1,0 +1,364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height:730rem;
+    background-color: rgb(180, 203, 203);
+}
+
+
+#main-section{
+    
+    font-size:12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    flex-direction:column;
+    padding-top:5rem;
+}
+
+button{
+    height:14rem;
+    width:100rem;
+    font-size:13rem;
+}
+
+#navbar{
+    
+   
+    width:98%;
+    height:28rem;
+    background-color: rgb(207, 143, 143);
+    border:12px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    
+}
+
+.feature-items{
+    
+     border-right:12px solid black;
+    height: 27rem;
+    width:80rem;
+    align-items:center;
+    text-decoration-line:none;
+    color:black;
+    padding-top:6rem;
+    font-size:10.5rem;
+    font-weight: 500;
+    flex-direction: row;
+
+}
+
+
+.box{
+    height: 180rem;
+    background-color:gray;
+    border:15px solid black;
+    width:360rem;
+    margin-bottom:2rem;
+    margin-top:3rem;
+    overflow: root;
+    display: flow-root;
+}
+
+.features-header{
+    text-decoration:underline;
+    font-weight:400;
+    font-size:13rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top:2rem;
+    margin-bottom:2rem;
+    margin-right:2rem;
+}
+
+.features-subheader{
+    margin-top:2rem;
+    margin-bottom:5rem;
+    font-size:8rem;
+}
+
+
+
+/*Home Section */
+
+#skill-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:10rem;
+    gap:4rem;
+}
+
+.skill-label{
+    font-size:10rem;
+}
+.skill-dropdown{
+    height:14rem;
+    width:110rem;
+    font-size:8rem;
+    background-color: antiquewhite;
+    border:4px solid black;
+}
+
+option{
+font-family:Arial, Helvetica, sans-serif
+}
+#continue-btn{
+    height:16rem;
+    width:60rem;
+    font-size:8rem;
+    font-weight:bold;
+    border-radius:8rem;
+    background-color: rgb(126, 88, 88);
+    border:4px solid black;
+    cursor:pointer;
+}
+
+/*Home Section End*/
+
+/*To-Do List Section */
+#to-do{
+
+justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style-position: inside;
+}
+
+#to-do-list{
+
+    display: flex;
+    flex-direction:column;
+    list-style-position:inside;
+    list-style-type:none;
+}
+
+.checkbox{
+    height:6rem;
+    width:6rem;
+    margin-right:5rem;
+    cursor:pointer;
+}
+
+.list-items{
+
+list-style-position:inside;
+}
+
+#to-do-list-btn{
+    margin-top:5rem;
+    margin-bottom:5rem;
+    height:14rem;
+    width:80rem;
+    font-size:8rem;
+    font-weight:bold;
+    border-radius:8rem;
+    background-color: rgb(126, 88, 88);
+    border:4px solid black;
+    cursor:pointer;
+}
+
+/*To Do List Section End*/
+
+/*Progress Tracker*/
+
+#progress-bar-container{
+    height:140rem;
+    width:300rem;
+    border:10px solid black;
+    margin-top:5rem;
+    margin-bottom:5rem;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#habits-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#progress-bar{
+   height:40rem;
+    width:0%;
+    background-color:green;
+    text-align:center;
+    line-height:400rem;
+    color:white;
+    font-size:8rem;
+    font-weight:bold;
+}
+#habits-list{
+    list-style-type:none;
+    display:flex;
+    flex-direction:column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:3rem;
+    justify-content: space-between;
+    margin:auto;
+    align-items: center;
+}
+.habits-list-items{
+    padding-right:12rem;
+    padding-left:5rem;
+    margin-right:2rem;
+    margin-left:2rem;
+    font-size:8rem;
+}
+#progress-tracker-nav-item{
+ width:100rem;   
+
+}
+
+input[type="checkbox"]{
+    height:6rem;
+    width:6rem;
+    margin-right:5rem;
+    cursor:pointer;
+    background-color: green;
+}
+
+/*Progress Tracker Ends */
+
+
+
+
+
+
+/*Skill History Section */
+
+#skill-history-list{
+    font-size:6rem;
+   
+    margin-top:4rem;
+    margin-left:5rem;
+    list-style-position:inside;
+    border:10px solid black;
+    height:130rem;
+    padding-top:5rem;
+}
+
+#trophy-img{
+    height:15rem;
+    width:15rem;
+    margin-top:3rem;
+}
+
+/*Skill History Section End*/
+
+/*Settings Section */
+
+#settings-box{
+    height: 200rem;
+}
+
+#settings-header{
+    margin-bottom:4rem;
+}
+#settings-list{
+    list-style-type:none;
+    display:flex;
+    flex-direction:row;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:6rem;
+    height:23rem;
+    justify-content: space-between;
+    background-color: rgb(116, 172, 153);
+    border:10px solid black;
+    justify-content: space-between;
+    margin:auto;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.settings-items{
+    border-right:15px solid black;
+    height:22rem;
+    padding-top:4rem;
+    padding-right:12rem;
+    padding-left:5rem;
+    margin-right:2rem;
+    margin-left:2rem;
+}
+
+#settings-icon{
+     height:15rem;
+    width:15rem;
+    margin-top:3rem;
+}
+
+#notification-btn{
+       padding-left:10rem;
+}
+
+#help-support-btn{
+    border-right:none;
+}
+.settings-btn{
+height:20rem;
+width:60rem;
+font-size:7rem;
+border:10px solid black;
+border-radius:20rem;
+background-color: rgb(126, 88, 88);
+margin-top:20rem;
+bottom:0;
+}
+#save-changes-btn{
+    margin-right:10rem;
+}
+#settings-footer{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:90rem;
+    
+}
+/*Settings Section End*/
+
+/*Footer Section */
+
+#footer{
+    
+    width:100%;
+    height:20rem;
+    background-color:rgb(141, 116, 87);
+    border-top:4px solid black;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+
+#footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+
+#footer-text{
+    font-size:4rem;
+}
+
+
+
+/*End of Footer Section */
