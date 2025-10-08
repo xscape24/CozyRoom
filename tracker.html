@@ -5,23 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HeroTracker</title>
     <link rel="stylesheet" href="tracker.css">
-    <script src="script.js"></script>
+    <script src="tracker.js"></script>
     <script src="https://kit.fontawesome.com/1553b227c3.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
 </head>
 <body>
     
     
     
-<div id="main-section">
+    <div id="main-section">
         <!--Navbar-->
         <div id="navbar">
             
             
-            <a href="#home" class="feature-items">Home <i class="fa-solid fa-house"></i></a>
+            <a href="#home" class="feature-items"><i class="fa-solid fa-house"> </i>              Home </a>
             <a href="#to-do-list" class="feature-items">To Do List <i class="fa-solid fa-clipboard-list"></i></a>
             <a href="#progress-tracker" id="progress-tracker-nav-item" class="feature-items">Progress Tracker <i class="fa-solid fa-spinner"></i></a>
             <a href="#skill-history" class="feature-items">Skill History <i class="fa-solid fa-trophy"></i></a>
-            <a href="#settings" class="feature-items">Settings <i class="fa-solid fa-gear"></i></a>
+            <a href="#settings" class="feature-items" >  <i class="fa-solid fa-gear"></i>   Settings</a>
             
             
             
@@ -31,111 +35,165 @@
         <!--End of Navbar-->
         
         
-        <section id="home">
-            <div class="box">
-                <h1 class="features-header">Home</h1>
-                <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.e</p>
-                <form action="/actionpage.php" id="skill-form">
-                    <label for="" class="skill-label">Please select a skill:</label>
-                    <select  class="skill-dropdown" placeholder="--Please select an option--">
-                        <option value="default">--Please select an option--" </option>
-                        <option value="meditation">Meditation </option>
-                        <option value="exercise">Exercise </option>
-                        <option value="reading">Reading </option>
-                        <option value="studying">Studying </option>
-                        <option value="breathwork">Breathwork </option>
-                        <option value="other">Other</option>
-                    </select>
-
-                    <label for="" class="skill-label">Select habit frequency:</label>
-                    <select  class="skill-dropdown" placeholder="--Please select an option--">
-                        <option value="default">--Please select an option--" </option>
-                        <option value="frequency1">1/day </option>
-                        <option value="frequency2">2/day</option>
-                        <option value="frequency3">3/day </option>
-                        <option value="frequency4">4/day </option>
-                        <option value="frequency5">5/day </option>
-                        <option value="other">Other</option>
-                    </select>
-
-                     <label for="" class="skill-label">Select habit frequency:</label>
-                    <select  class="skill-dropdown" placeholder="--Please select an option--">
-                        <option value="default">--Please select an option--" </option>
-                        <option value="frequency1">1/day </option>
-                        <option value="frequency2">2/day</option>
-                        <option value="frequency3">3/day </option>
-                        <option value="frequency4">4/day </option>
-                        <option value="frequency5">5/day </option>
-                        <option value="other">Other</option>
-                    </select>
-                    
-                </form>
+        <section id="home" id="box">
+            
+            <h1 class="features-header">Home</h1>
+            <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.</p>
+            <form action="/actionpage.php" id="skill-form">
+                <label for="" class="skill-label">Please select a skill:</label>
+                <select  class="skill-dropdown" placeholder="--Please select an option--">
+                    <option value="default">--Please select an option--" </option>
+                    <option value="meditation">Meditation </option>
+                    <option value="exercise">Exercise </option>
+                    <option value="reading">Reading </option>
+                    <option value="studying">Studying </option>
+                    <option value="breathwork">Breathwork </option>
+                    <option value="other">Other</option>
+                </select>
                 
-                <button id="continue-btn">Continue</button>
-            </div>
+                <label for="" class="skill-label">Select habit frequency:</label>
+                <select  class="skill-dropdown" placeholder="--Please select an option--">
+                    <option value="default">--Please select an option--" </option>
+                    <option value="frequency1">Daily</option>
+                    <option value="frequency2">Weekly</option>
+                    <option value="frequency3">Monthly </option>
+                    <option value="frequency4">--Custom-- </option>
+                    
+                </select>
+                
+                <label for="" class="skill-label">Select Start and End Date:</label>
+                <div id="date-container">
+                    <input type="date" name="" id="start-date" min="2025-09-05"> &dash;
+                    <input type="date" name="" id="end-date">
+                </div>
+                
+                
+                
+                
+            </form>
+            
+            <button id="continue-btn">Continue</button>
+            
         </section>
         
         
         <section id="todo">
-            <div class="box">
-                <h1 class="features-header"> To Do List</h1>
-                <ul id="to-do-list">
-                    <li class="list-items"> <input type="checkbox" name="" class="checkbox" id="">test1</li>
-                    <li class="list-items"> <input type="checkbox" name="" class="checkbox"id="">test1</li>
-                    <li class="list-items"> <input type="checkbox" name="" class="checkbox"id="">test3</li>
-                </ul>
-                <button id="to-do-list-btn">&#43;                   Add an Item </button>
+            
+            <h1 class="features-header"> To Do List</h1>
+            <ul id="to-do-list">
+                
+                
+                <input type="text" name="" placeholder="Enter your first item" id="todo-input">
+            </ul>
+            <div id="todo-btn-container">
+                <button class="to-do-list-btn" id="add-to-list-btn" onclick="addItem()">  <p id="add-item-text">+ Add Item </p> </button>
                 
             </div>
+            
+            
+            
         </section>
         
         
         <section id="progress-tracker">
-            <div class="box">
+            <div>
                 <h1 class="features-header">Progress Tracker</h1>
                 <p  class="features-subheader">Congrats, you've completed 4/10 habits. Keep going!</p>
-
+                
                 <div id="progress-bar-container">
-                    <h1>Your Habits:</h1>
-                    <ul id="habits-list"> 
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
-                      <div id="habits-container"> <li class="habits-list-items">Meditation</li>   <input type="checkbox" name="" id=""></div>
+                    <div id="main-section">
+                       
                         
-                    </ul>
-            </div>
-        </section>
-        
-        
-        <section id="skill-history">
-            <div class="box">
-                <h1 class="features-header">Skill History <img src="assets\8348232 (1).png" alt="Image of trophy" id="trophy-img"></h1>
-                <p  class="features-subheader">Here you can review past milestones.</p>
-                <ul id="skill-history-list">
-                    <li>Learned HTML basics</li>
-                    <li>Learned how to style with CSS</li>
-                    <li>Learned how to use Javascript.</li>
-                    <li>Cooked Food</li>
-                    <li>Practiced the piano</li>
-                </ul>
-            </div>
-        </section>
-        
-        
-        <section id="settings">
-            <div class="box" id="settings-box">
-                <div id="settings-header">
-                    <h1 class="features-header">Settings  <img src="assets\563541 (1).png" alt="Settings Icon" id="settings-icon" ></h1>
+
+<table id="progress-tracker-table">
+                         <h1 id="habits-list-header">Habits List</h1>    
+                            <tr>
+                                <th class="pt-item">Meditation</th>
+                                <td class="pt-data-cell"><span>&#10004;</td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Exercise</th>
+                                <td class="pt-data-cell"> <span>&#10004;</td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Reading</th>
+                                 <td class="pt-data-cell"><span>&#10004;</td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Journaling</th>
+                                 <td class="pt-data-cell"><span>&#10004;</td>
+                            </tr>
+                              <tr>
+                                <th class="pt-item" >Coding</th>
+                                <td class="pt-data-cell"><span>&#10004;</td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Piano</th>
+                                <td class="pt-data-cell"></td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Chess</th>
+                                <td class="pt-data-cell"></td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Singing</th>
+                                <td class="pt-data-cell"></td>
+                            </tr>
+                            
+                            
+                        </table>
+
+
+
+                    
+                    </div>
+                    
+                    <img src="assets\arab-man-showing-thumbs-up-ai-generative-free-png.webp" id="progress-tracker-img" alt=""> 
                 </div>
                 
-                <div id="settings-text-container">
-            
+                
+                
+                <section id="skill-history">
+                    
+                    <h1 class="features-header">Skill History <img src="assets\8348232 (1).png" alt="Image of trophy" id="trophy-img"></h1>
+                    <p  class="features-subheader">Here you can review past milestones.</p>
+                    <div id="skill-history-container">
+                        <table id="skill-history-table">
+                            
+                            <tr>
+                                <th>Meditation</th>
+                                <td class="sh-data-cell"><div class="data"></div></td>
+                            </tr>
+                            <tr>
+                                <th>Exercise</th>
+                                <td class="sh-data-cell"><div class="data"></td>
+                            </tr>
+                            <tr>
+                                <th>Reading</th>
+                                <td class="sh-data-cell"><div class="data"></td>
+                            </tr>
+                            <tr>
+                                <th>Journaling</th>
+                                <td class="sh-data-cell"><div class="data"></td>
+                            </tr>
+                            
+                        </table>
+                     
+                        <img id="skill-history-img" src="assets\businessman-and-gold-trophy-on-ladder-of-success-png.webp" alt="Image of Success Ladder">
+                    </div>
+                    
+                    
+                </section>
+                
+                
+                <section id="settings">
+                    
+                    <div id="settings-header">
+                        <h1 class="features-header">Settings  <img src="assets\563541 (1).png" alt="Settings Icon" id="settings-icon" ></h1>
+                    </div>
+                    
+                    
+                    
                     <ul id="settings-list">
                         <li class="settings-items">Change Theme</li>
                         <li class="settings-items" id="notification-btn">Notification Preferences</li>
@@ -143,48 +201,158 @@
                         <li class="settings-items">Privacy Settings</li>
                         <li class="settings-items" id="help-support-btn">Help & Support</li>
                     </ul>
-                    <div id="settings-footer">
-                        <button id="save-changes-btn" class="settings-btn">Save Changes</button>
-                        <button id="cancel-btn"  class="settings-btn">Cancel</button>
+                    
+                    
+                    <div class="settings-box" id="settings-box-1">
+                        <h1>Contact Info</h1>
+                        
+                        
+                        <h1>Change Password</h1>
+                        <h1>Connected Accounts</h1>
+                        <ul id="social-media-list">
+                            <li class="social-media-item">Connect to Google</li>
+                            <li class="social-media-item">Connect to Email</li>
+                            <li class="social-media-item">Connect to Facebook</li>
+                            <li class="social-media-item">Connect to Apple</li>
+                        </ul>
+                        
+                        <button>Log Out</button>
+                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <button>Change Mode</button>
+                        <div class="settings-footer">
+                            <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
+                            <button  class="cancel-btn"  class="settings-btn">Cancel</button>
+                        </div>
+                        
+                    </div>
+                    <div class="settings-box" id="settings-box-2">
+                        <h1>Change Theme</h1>
+                        <h1>Theme Preferences</h1>
+                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <button>Change Mode</button>
+                        
+                        
+                        <ul id="social-media-list">
+                            <li class="social-media-item">Connect to Google</li>
+                            <li class="social-media-item">Connect to Email</li>
+                            <li class="social-media-item">Connect to Facebook</li>
+                            <li class="social-media-item">Connect to Apple</li>
+                        </ul>
+                        
+                        <button>Log Out</button>
+                        <div class="settings-footer">
+                            <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
+                            <button  class="cancel-btn"  class="settings-btn">Cancel</button>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="settings-box" id="settings-box-3">
+                        <h1>Notificatoin Preferences</h1>
+                        
+                        <h1>Change Password</h1>
+                        <h1>Connected Accounts</h1>
+                        <ul>
+                            <li>Connect to Google</li>
+                            <li>Connect to Email</li>
+                            <li>Connect to Facebook</li>
+                            <li>Connect to Apple</li>
+                        </ul>
+                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <button>Change Mode</button>
+                        
+                        <button>Log Out</button>
+                        <div class="settings-footer">
+                            <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
+                            <button  class="cancel-btn"  class="settings-btn">Cancel</button>
+                        </div>
+                        
+                    </div>
+                    <div class="settings-box" id="settings-box-4">
+                        <h1>Privacy Settings</h1>
+                        
+                        <h1>Change Password</h1>
+                        <h1>Connected Accounts</h1>
+                        <ul>
+                            <li>Connect to Google</li>
+                            <li>Connect to Email</li>
+                            <li>Connect to Facebook</li>
+                            <li>Connect to Apple</li>
+                        </ul>
+                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <button>Change Mode</button>
+                        
+                        <button>Log Out</button>
+                        <div class="settings-footer">
+                            <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
+                            <button  class="cancel-btn"  class="settings-btn">Cancel</button>
+                        </div>
+                        
+                    </div>
+                    <div class="settings-box" id="settings-box-5">
+                        <h1>Help and Support</h1>
+                        
+                        <h1>Change Password</h1>
+                        <h1>Connected Accounts</h1>
+                        <ul>
+                            <li>Connect to Google</li>
+                            <li>Connect to Email</li>
+                            <li>Connect to Facebook</li>
+                            <li>Connect to Apple</li>
+                        </ul>
+                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <button>Change Mode</button>
+                        
+                        <button>Log Out</button>
+                        <div class="one-settings-footer">
+                            <button class="save-changes-btn" class="settings-btn">Save Changes</button>
+                            <button class="cancel-btn"  class="settings-btn">Cancel</button>
+                        </div>
+                        
                     </div>
                     
-                </div>
-            </section>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-     
-        
-        </div>
-        
-        
-        
-        
-        <footer id="footer">
-            <div id="footer-container">
-                <p id="footer-text">© 2025, Built with ❤️ by Eben Nduwimana</p>
+                    
+                    
+                    
+                    
+                    
+                    
+                </section>
                 
                 
-                <a href="https://www.linkedin.com/in/eben-nduwimana/">
-                    <img src="assets\hd-linkedin-square-black-icon-transparent-background-7017516949739946gsykkwdmd (1).png" id="linkedn-icon" class="contact-badge"  alt="">
-                </a>
-                <a href="https://github.com/xscape24">
-                    <img src="assets\icons8-github-30.png" id="github-icon" class="contact-badge" alt="">
-                </a>
                 
-                <a href="https://github.com/xscape24">
-                    <img src="assets\images.png" id="twitter-icon" class="contact-badge" alt="">
-                </a>
+                
+                
+                
+                
+                
+                
+                
+                
                 
             </div>
-        </footer>
-        
-    </body>
-    </html>
+            
+            
+            
+            
+            <div id="footer">
+                <div id="footer-container">
+                    <p id="footer-text">© 2025, Built with ❤️ by Eben Nduwimana</p>
+                    
+                    
+                    <a href="https://www.linkedin.com/in/eben-nduwimana/">
+                        <img src="assets\hd-linkedin-square-black-icon-transparent-background-7017516949739946gsykkwdmd (1).png" id="linkedn-icon" class="contact-badge"  alt="">
+                    </a>
+                    <a href="https://github.com/xscape24">
+                        <img src="assets\icons8-github-30.png" id="github-icon" class="contact-badge" alt="">
+                    </a>
+                    
+                    <a href="https://github.com/xscape24">
+                        <img src="assets\images.png" id="twitter-icon" class="contact-badge" alt="">
+                    </a>
+                    
+                </div>
+            </div>
+            
+        </body>
+        </html>

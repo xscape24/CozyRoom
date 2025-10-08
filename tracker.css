@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+   
     
 }
 
@@ -11,8 +12,11 @@ html{
 
 body{
     height:730rem;
-    background-color: rgb(180, 203, 203);
+    background:linear-gradient(orange, rgb(111, 111, 154));
+    font-family:'Times New Roman', Times, serif;
 }
+
+
 
 
 #main-section{
@@ -34,59 +38,74 @@ button{
 
 #navbar{
     
-   
+    
     width:98%;
     height:28rem;
-    background-color: rgb(207, 143, 143);
-    border:12px solid black;
+    background:linear-gradient(orange, rgb(111, 111, 154));
+    
+    
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-
+    margin-bottom:0;
+    border-right:0;
+    
+    
+    
     
 }
 
+
+
+
 .feature-items{
     
-     border-right:12px solid black;
+    
     height: 27rem;
     width:80rem;
     align-items:center;
     text-decoration-line:none;
     color:black;
     padding-top:6rem;
-    font-size:10.5rem;
+    font-size:10rem;
     font-weight: 500;
     flex-direction: row;
-
+    border:10px solid black;
+    border-radius:20%;
+    
 }
 
-
-.box{
-    height: 180rem;
-    background-color:gray;
+section{
+    background:linear-gradient(orange, rgb(111, 111, 154));
     border:15px solid black;
-    width:360rem;
+    
+    margin-top:0;
+    padding:0;
+    border-radius:30px;
+    
+    width:372rem;
     margin-bottom:2rem;
-    margin-top:3rem;
+    margin-top:0;
     overflow: root;
     display: flow-root;
+    height:100vh;
 }
+
 
 .features-header{
     text-decoration:underline;
     font-weight:400;
     font-size:13rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top:2rem;
+ 
     margin-bottom:2rem;
     margin-right:2rem;
 }
 
 .features-subheader{
-    margin-top:2rem;
-    margin-bottom:5rem;
+    margin-top:3rem;
+    margin-bottom:8rem;
     font-size:8rem;
 }
 
@@ -107,44 +126,65 @@ button{
     font-size:10rem;
 }
 .skill-dropdown{
-    height:14rem;
+    height:12rem;
     width:110rem;
-    font-size:8rem;
-    background-color: antiquewhite;
+    font-size:7rem;
+    background-color: rgb(221, 200, 169);
     border:4px solid black;
+}
+input[type="date"]::placeholder{
+    margin-left:4rem;
 }
 
 option{
-font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif
 }
 #continue-btn{
     height:16rem;
     width:60rem;
     font-size:8rem;
     font-weight:bold;
-    border-radius:8rem;
+    border-radius:4rem;
     background-color: rgb(126, 88, 88);
-    border:4px solid black;
+    border:10px solid black;
     cursor:pointer;
 }
+
+#date-container{
+    display: flex;
+}
+
+#start-date, #end-date{
+    height:11rem;
+    width:100rem;
+    font-size:6rem;
+    background-color: rgb(221, 200, 169);
+}
+
+#dash{
+    
+}
+
 
 /*Home Section End*/
 
 /*To-Do List Section */
 #to-do{
-
-justify-content: center;
+    
+    justify-content: center;
     align-items: center;
     text-align: center;
     list-style-position: inside;
 }
 
 #to-do-list{
-
+    
     display: flex;
     flex-direction:column;
     list-style-position:inside;
     list-style-type:none;
+    margin-bottom:10rem;
+    margin-top:2rem;
 }
 
 .checkbox{
@@ -155,23 +195,67 @@ justify-content: center;
 }
 
 .list-items{
-
-list-style-position:inside;
+    
+    list-style-position:inside;
+    font-size:10rem;
 }
 
-#to-do-list-btn{
-    margin-top:5rem;
-    margin-bottom:5rem;
-    height:14rem;
-    width:80rem;
-    font-size:8rem;
-    font-weight:bold;
-    border-radius:8rem;
-    background-color: rgb(126, 88, 88);
-    border:4px solid black;
+#todo-btn-container{
+    display: flex;
+    justify-content:center;
+}
+
+.to-do-list-btn{
+    background:linear-gradient(rgb(55, 64, 107), rgb(66, 142, 45));
     cursor:pointer;
+    height:15rem;
+    width:70rem;
+    border-radius:4rem;
+    font-size:8rem;
 }
 
+#add-to-list-btn{
+    font-size:4rem;
+    font-weight:300;
+    margin-right:2rem;
+}
+
+#remove-from-list-btn{
+    
+}
+
+
+
+#add-btn{
+    font-size:12rem; 
+    padding-bottom:3rem;
+}
+
+
+
+#todo-input{
+    width:120rem;
+    height:15rem;
+    justify-content: center;
+    margin:auto;
+    margin-top:4rem;
+    margin-bottom:2rem;
+    font-size:5rem;
+    opacity:0.5;
+}
+
+.todo-item{
+    border:2px solid black;
+    
+}
+
+
+#add-item-text{
+    font-size:8rem;
+}
+remove-item-text{
+    
+}
 /*To Do List Section End*/
 
 /*Progress Tracker*/
@@ -179,22 +263,25 @@ list-style-position:inside;
 #progress-bar-container{
     height:140rem;
     width:300rem;
-    border:10px solid black;
-    margin-top:5rem;
+    
+
     margin-bottom:5rem;
     position:relative;
-    margin-left:auto;
-    margin-right:auto;
-}
-
-#habits-container{
+    margin-left:45rem;
+   
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     
 }
 
+#habits-main-section{
+    justify-content: space-between;
+  
+    margin-right:13rem;
+}
+
 #progress-bar{
-   height:40rem;
+    height:40rem;
     width:0%;
     background-color:green;
     text-align:center;
@@ -203,26 +290,45 @@ list-style-position:inside;
     font-size:8rem;
     font-weight:bold;
 }
-#habits-list{
-    list-style-type:none;
-    display:flex;
-    flex-direction:column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:3rem;
-    justify-content: space-between;
-    margin:auto;
-    align-items: center;
-}
-.habits-list-items{
-    padding-right:12rem;
-    padding-left:5rem;
-    margin-right:2rem;
-    margin-left:2rem;
-    font-size:8rem;
-}
-#progress-tracker-nav-item{
- width:100rem;   
 
+#habits-list-header{
+    font-size: 15rem;
+    text-decoration-line: underline;
+    margin-bottom:3rem;
+}
+
+#progress-tracker-table{
+    border:10px solid black;
+    height:100rem;
+    width:80rem;
+    
+}
+
+.pt-item{
+    font-weight:normal;
+    font-size:6rem;
+}
+
+.pt-data-cell{
+border-bottom:2px solid black;
+
+}
+span{
+    content: "\2714";
+    color:green;
+    height:10rem;
+    width:10rem;
+}
+
+
+
+#progress-tracker-img{
+    display:flex;
+    float:right;
+    height:80rem;
+    width:82rem;
+    margin-top:7rem;
+    
 }
 
 input[type="checkbox"]{
@@ -242,16 +348,8 @@ input[type="checkbox"]{
 
 /*Skill History Section */
 
-#skill-history-list{
-    font-size:6rem;
-   
-    margin-top:4rem;
-    margin-left:5rem;
-    list-style-position:inside;
-    border:10px solid black;
-    height:130rem;
-    padding-top:5rem;
-}
+
+
 
 #trophy-img{
     height:15rem;
@@ -259,16 +357,58 @@ input[type="checkbox"]{
     margin-top:3rem;
 }
 
+#skill-history-container{
+    height:200rem;
+display: flex;
+justify-content:center;
+
+}
+
+#skill-history-table{
+    border:10px solid black;
+    height: 100rem;
+    margin-right: 30rem;
+}
+
+th, .sh-data-cell {
+    border-bottom:5px solid black;
+     border-right:5px solid black;
+}
+
+.sh-data-cell{
+    height:10rem;
+    width:100rem;
+    
+    padding-left:10rem;
+    padding-right:10rem;
+    background-color:blue;
+    border-radius:10px;
+}
+
+
+#skill-history-img{
+    height:100rem;
+    width:120rem; 
+ border-radius:10rem;
+}
+
 /*Skill History Section End*/
 
 /*Settings Section */
 
-#settings-box{
+#settings{
     height: 200rem;
 }
 
 #settings-header{
     margin-bottom:4rem;
+}
+
+#settings-section{
+    height:140rem;
+    width:370rem;
+    border:15px solid black;
+    border-radius:5rem 0rem 5rem 0rem;
 }
 #settings-list{
     list-style-type:none;
@@ -276,59 +416,138 @@ input[type="checkbox"]{
     flex-direction:row;
     font-family: Arial, Helvetica, sans-serif;
     font-size:6rem;
-    height:23rem;
+    height:17rem;
     justify-content: space-between;
-    background-color: rgb(116, 172, 153);
+    width:98%;
     border:10px solid black;
+    text-align: center;
     justify-content: space-between;
     margin:auto;
     align-items: center;
     padding-left: 2rem;
     padding-right: 2rem;
+    border-radius:5rem 5rem 5rem 5rem;/* bottom, top*//
 }
+
+.settings-box{
+    height:125rem;
+    width:368rem;
+    margin-top:2rem;
+    border:40px solid black;
+
+    background-color: rgb(156, 156, 83);
+    padding-bottom:0;
+   
+}
+/*Box 1*/
+
+
+#social-media-list{
+
+}
+
+.social-media-items{
+background-color: white;
+}
+/*Box 1 ends*/
+
+
+/*Box 2*/
+
+
+
+
+/*Box 2 ends*/
+
+
+/*Box 3*/
+
+
+/*Box 3 ends*/
+
+/*Box 4*/
+
+
+/*Box 4 ends*/
+/*Box 5*/
+
+
+
+
+
+/*Box 5 ends*/
+#settings-box-1{
+    
+
+}
+#settings-box-2{
+    
+}
+#settings-box-3{
+    
+}
+#settings-box-4{
+    
+}
+#settings-box-5{
+    
+}
+
+.settings-box{
+    font-size:5rem;
+    
+}
+
+
 .settings-items{
     border-right:15px solid black;
-    height:22rem;
-    padding-top:4rem;
+    height:17rem;
+    
     padding-right:12rem;
     padding-left:5rem;
     margin-right:2rem;
     margin-left:2rem;
+    padding-top:5rem;
+    border-radius:0rem 0rem 0rem 0rem;
+    border-bottom:0;
+    cursor:pointer;
 }
 
 #settings-icon{
-     height:15rem;
+    height:15rem;
     width:15rem;
     margin-top:3rem;
 }
 
 #notification-btn{
-       padding-left:10rem;
+    padding-left:10rem;
 }
 
 #help-support-btn{
     border-right:none;
 }
 .settings-btn{
-height:20rem;
-width:60rem;
-font-size:7rem;
-border:10px solid black;
-border-radius:20rem;
-background-color: rgb(126, 88, 88);
-margin-top:20rem;
-bottom:0;
+    height:13rem;
+    width:45rem;
+    font-size:5rem;
+    border:10px solid black;
+    border-radius:10rem;
+    cursor:pointer;
+    background:linear-gradient (orange, rgb(111, 111, 154));
+    margin-top:10rem;
+    bottom:0;
+    float:bottom;
 }
 #save-changes-btn{
     margin-right:10rem;
+    margin-top:0;
 }
+
 #settings-footer{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top:90rem;
-    
+    margin-top:0;
+    margin-bottom:20rem;
 }
+
 /*Settings Section End*/
 
 /*Footer Section */
@@ -343,6 +562,8 @@ bottom:0;
     align-items: center;
     text-align: center;
     justify-content: center;
+   
+  
     
     
 }
@@ -352,6 +573,7 @@ bottom:0;
     justify-content: center;
     align-items: center;
     text-align: center;
+    bottom:0;
     margin:auto;
 }
 
