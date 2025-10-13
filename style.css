@@ -10,73 +10,109 @@ html{
 }
 
 body{
-    
+    background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
     
     
 }
 
-#main-section{
-background:linear-gradient(orange, green);
-height:370rem;
+#section-1{
+background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+height:110vh;
+border-bottom:1vh solid black;
 }
 
 .headings{
     text-decoration: underline;
-    font-size:12rem;
+    font-size:3vw;
     font-weight:bold;
     text-transform:uppercase;
     text-align:center;
-    margin-bottom:8rem;
+
 }
 
 /*Intro Section*/
 
 #intro{
-    margin-bottom:10rem;
+  
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align:center;
 }
-
-#logo{
-    height:95rem;
-    width:95rem;
-    border-radius:50%;
-    align-items: center;
-    margin-bottom:10rem;
-    border:2rem dashed black;
-    margin-top:14rem;
-    margin-bottom:12rem;
-    
+.lofi-girl-img{
+    height:44vh;
+    width:40vw;
+    border:0.5vw solid black;
+    border-radius:1vw;
+   
 }
 
+
+#ra{
+    height: 10vh;
+    border:1vw solid black;
+}
 
 #header-1{
-    margin-bottom:10rem;
+   
+    margin-top:7vh;
+    font-size:4vw;
+    margin-bottom:4vh;
 }
+
+#subheader-1{
+    font-size:2vw;
+    margin-bottom:6vh;
+}
+
+#get-started-btn-container{
+height:2vh;
+
+display: flex;
+flex-direction: row;
+gap:4vh;
+margin-top:8vh;
+}
+
 
 
 .get-started-btn{
-    height:18rem;
-    width:50rem;
-    border-radius: 4rem;
-    margin: 0 auto;
-    border:0.8rem solid black;
-    font-size:6rem;
+    height:11vh;
+    width:12vw;
+    border-radius: 1vw;
+  
+  
+    border:0.3vw solid black;
+    font-size:1.3vw;
     font-weight:bold;
     color:black;
+    
     cursor:pointer;
-    background-color: rgb(131, 131, 192);
+   background:linear-gradient(rgb(255, 102, 176), rgb(172, 172, 252));
 }
 
+#get-started-btn-1{
+margin-bottom:1vh;
+}
+
+#get-started-btn-2{
+   
+}
 .get-started-btn:hover{
     background-color: green;
 }
 
+#registered-link{
+    margin-bottom:10vh;
+}
 
 
+/*Section 2*/
+
+#section-2{
+background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+}
 
 /*Features Section */
 
@@ -89,8 +125,8 @@ height:370rem;
 }
 
 #features-header{
-    font-size:12rem;
-    
+    font-size:4vw;
+    margin-top:4vh;
 }
 
 #features-list{
@@ -101,8 +137,8 @@ height:370rem;
 }
 
 .feature-items{
-    font-size:7rem;
-    margin-bottom:2rem;
+    font-size:2vw;
+    margin-bottom:2vh;
 }
 
 
@@ -124,9 +160,9 @@ height:370rem;
 }
 .circle{
     border-radius: 50%;
-    height:74rem;
-    width:85rem;
-    font-size:7rem;
+    height:36vh;
+    width:65vw;
+    font-size:1.7vw;
     margin-right:5rem;
     font-weight:500;
     background-color: rgb(57, 139, 88);
@@ -161,7 +197,7 @@ height:370rem;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background:linear-gradient(rgb(163, 144, 109), rgb(77, 77, 196));
+  
     width:100%;
     border:10px;
     margin:auto;
@@ -171,9 +207,9 @@ height:370rem;
 }
 
 #testimonials-header{
-    font-size:16rem;
-    margin-top:14rem;
-    margin-bottom:8rem;
+    font-size:4vw;
+    margin-top:8vh;
+    margin-bottom:4vh;
 }
 
 .testimonial-ad{
@@ -182,24 +218,24 @@ height:370rem;
    justify-content: center;
    align-items: center;
     display:flex;
-    border:10px solid black;
-   width:85%; 
+    border:0.5vw solid black;
+   width:85vw; 
     margin:auto;
-    height:75rem;
-    margin-bottom:5rem;
+    height:65vh;
+    margin-bottom:2vh;
     text-align:center;
 
   
 }
 
 .testimonial-img{
-    height:60rem;
-    width:60rem;
-    border:20px solid black;
+    height:43vh;
+    width:21vw;
+    border:0.5vw solid black;
     border-radius:50%;
     float:left;
-    margin-right:10rem;
-    margin-left:4rem;
+   margin-right:1vh;
+    margin-left:3vh;
 
     
 }
@@ -210,39 +246,44 @@ height:370rem;
 .testimonial-text-container{
 float:right;
 margin-top:10rem;
+
+
 }
 
 
 
 .testimonial-ad-header{
-    font-size:8rem;
+    font-size:3vw;
     font-family: 'Courier New', Courier, monospace;
-    margin-top:3rem;
-    margin-bottom:4rem;
+    margin-top:3vh;
+   
+    margin-bottom:2.3vh;
 }
 .testimonial-text{
-    font-size:4.5rem;
+    font-size:1.3vw;
+  width:55vw;
+  margin-left:8vh;
+ 
     color:black;
-    font-family: 'Courier New', Courier, monospace;;
-}
-
-#get-started-btn-2{
-    margin-bottom:10rem;
-    margin-top:10rem;
+    font-family: 'Courier New', Courier, monospace;
     
 }
 
 
-/*End of Testemonial Section*/
+
+
+/*End of Testimonial Section*/
+
+/*End of Section 3*/
 
 /*Footer Section */
 
 #footer{
     
     width:100%;
-    height:20rem;
-    background-color:rgb(141, 116, 87);
-    border-top:7px solid black;
+    height:11vh;
+ background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+    border-top:.5vh solid black;
     display: flex;
     align-items: center;
     text-align: center;
@@ -258,7 +299,7 @@ margin-top:10rem;
 }
 
 #footer-text{
-    font-size:5rem;
+    font-size:1.1vw;
 }
 
 

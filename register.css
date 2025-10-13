@@ -1,0 +1,16 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+    
+    
+}

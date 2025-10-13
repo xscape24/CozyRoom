@@ -2,8 +2,6 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-   
-    
 }
 
 html{
@@ -14,6 +12,7 @@ body{
     height:730rem;
     background:linear-gradient(orange, rgb(111, 111, 154));
     font-family:'Times New Roman', Times, serif;
+    
 }
 
 
@@ -48,7 +47,7 @@ button{
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-bottom:0;
+    margin-bottom:2rem;
     border-right:0;
     
     
@@ -72,7 +71,7 @@ button{
     font-weight: 500;
     flex-direction: row;
     border:10px solid black;
-    border-radius:20%;
+    border-radius:4vw;
     
 }
 
@@ -98,7 +97,7 @@ section{
     font-weight:400;
     font-size:13rem;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- 
+    
     margin-bottom:2rem;
     margin-right:2rem;
 }
@@ -143,10 +142,11 @@ option{
     height:16rem;
     width:60rem;
     font-size:8rem;
-    font-weight:bold;
-    border-radius:4rem;
-    background-color: rgb(126, 88, 88);
-    border:10px solid black;
+    
+    border-radius:3vh;
+    
+ background:linear-gradient(rgb(55, 64, 107), rgb(66, 142, 45));
+    border:0.05vw solid black;
     cursor:pointer;
 }
 
@@ -264,11 +264,11 @@ remove-item-text{
     height:140rem;
     width:300rem;
     
-
+    
     margin-bottom:5rem;
     position:relative;
     margin-left:45rem;
-   
+    
     display: flex;
     justify-content: center;
     
@@ -276,7 +276,7 @@ remove-item-text{
 
 #habits-main-section{
     justify-content: space-between;
-  
+    
     margin-right:13rem;
 }
 
@@ -292,26 +292,30 @@ remove-item-text{
 }
 
 #habits-list-header{
-    font-size: 15rem;
+    font-size: 3vw;
     text-decoration-line: underline;
-    margin-bottom:3rem;
+    margin-bottom:1rem;
 }
 
 #progress-tracker-table{
-    border:10px solid black;
-    height:100rem;
-    width:80rem;
+    table-layout:fixed;
+    border:0.20vw solid black;
+    height:20vh;
+    width:40vh;
+    margin-right:14rem;
     
 }
 
 .pt-item{
     font-weight:normal;
     font-size:6rem;
+    height:2vh;
 }
 
 .pt-data-cell{
-border-bottom:2px solid black;
-
+    border-bottom:2px solid black;
+    
+    
 }
 span{
     content: "\2714";
@@ -327,7 +331,7 @@ span{
     float:right;
     height:80rem;
     width:82rem;
-    margin-top:7rem;
+    margin-top:5rem;
     
 }
 
@@ -359,9 +363,9 @@ input[type="checkbox"]{
 
 #skill-history-container{
     height:200rem;
-display: flex;
-justify-content:center;
-
+    display: flex;
+    justify-content:center;
+    
 }
 
 #skill-history-table{
@@ -372,7 +376,7 @@ justify-content:center;
 
 th, .sh-data-cell {
     border-bottom:5px solid black;
-     border-right:5px solid black;
+    border-right:5px solid black;
 }
 
 .sh-data-cell{
@@ -389,7 +393,7 @@ th, .sh-data-cell {
 #skill-history-img{
     height:100rem;
     width:120rem; 
- border-radius:10rem;
+    border-radius:10rem;
 }
 
 /*Skill History Section End*/
@@ -402,6 +406,7 @@ th, .sh-data-cell {
 
 #settings-header{
     margin-bottom:4rem;
+    text-decoration-line: underline;
 }
 
 #settings-section{
@@ -410,6 +415,10 @@ th, .sh-data-cell {
     border:15px solid black;
     border-radius:5rem 0rem 5rem 0rem;
 }
+.settings-section-header{
+    text-decoration-line:underline;
+}
+
 #settings-list{
     list-style-type:none;
     display:flex;
@@ -434,26 +443,64 @@ th, .sh-data-cell {
     width:368rem;
     margin-top:2rem;
     border:40px solid black;
-
-    background-color: rgb(156, 156, 83);
-    padding-bottom:0;
    
+    justify-content: center;
+    background:linear-gradient (orange, rgb(111, 111, 154));
+    padding-bottom:0;
+    
 }
 /*Box 1*/
 
-
+.connected-accounts-header{
+    font-size:1.8vw;
+   
+   font-weight:bold;
+}
 #social-media-list{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type:none;
 }
 
-.social-media-items{
-background-color: white;
+.social-media-item{
+    
+    background-color: white;
+    border:0.5vh solid black;
+    height:8vh;
+    width:17vw;
+    white-space:nowrap;
+    font-weight:bold;
+    font-size:50%;
+    border-radius:1vh;
+    padding-top:4vh;
+}
+
+#google-item{
+    background-color: whitesmoke;
+
+}
+#apple-item{
+    background-color: antiquewhite;
+}
+#facebook-item{
+    background-color: #1870e2;
+}
+
+.logout-btn{
+    border-radius:5vw;
+    font-size:2vw;
+    font-weight: bold;
+    border: 0.5vh solid black;
 }
 /*Box 1 ends*/
 
 
 /*Box 2*/
-
+#theme-change-btn{
+font-size:90%;
+}
 
 
 
@@ -478,7 +525,7 @@ background-color: white;
 /*Box 5 ends*/
 #settings-box-1{
     
-
+    
 }
 #settings-box-2{
     
@@ -513,6 +560,21 @@ background-color: white;
     cursor:pointer;
 }
 
+#settings-form{
+    margin-bottom:2rem;
+}
+
+.settings-label{
+font-size:2vw;
+
+}
+
+
+.settings-input{
+    height:4vh;
+    width:10vw;
+}
+
 #settings-icon{
     height:15rem;
     width:15rem;
@@ -538,9 +600,22 @@ background-color: white;
     bottom:0;
     float:bottom;
 }
-#save-changes-btn{
+.save-changes-btn{
     margin-right:10rem;
     margin-top:0;
+    height:8vh;
+    width:20vh;
+    font-size:1.2vw;
+    border:0.16vw solid black;
+    border-radius:2vw;
+}
+
+.cancel-btn{
+    height:8vh;
+    width:20vh;
+    font-size:1.4vw;
+    border:0.16vw solid black;
+    border-radius:2vw;
 }
 
 #settings-footer{
@@ -549,6 +624,48 @@ background-color: white;
 }
 
 /*Settings Section End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Footer Section */
 
@@ -562,8 +679,10 @@ background-color: white;
     align-items: center;
     text-align: center;
     justify-content: center;
-   
-  
+    float:bottom;
+    margin-top:auto;
+    
+    
     
     
 }
