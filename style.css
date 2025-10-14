@@ -16,9 +16,10 @@ body{
 }
 
 #section-1{
-background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
-height:110vh;
-border-bottom:1vh solid black;
+    background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+    height:100vh;
+    border-bottom:1vh solid black;
+    
 }
 
 .headings{
@@ -27,13 +28,13 @@ border-bottom:1vh solid black;
     font-weight:bold;
     text-transform:uppercase;
     text-align:center;
-
+    
 }
 
 /*Intro Section*/
 
 #intro{
-  
+    
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -45,236 +46,84 @@ border-bottom:1vh solid black;
     width:40vw;
     border:0.5vw solid black;
     border-radius:1vw;
-   
+    
 }
 
 
-#ra{
-    height: 10vh;
-    border:1vw solid black;
-}
 
 #header-1{
-   
-    margin-top:7vh;
+    
+    margin-top:9.2vh;
     font-size:4vw;
     margin-bottom:4vh;
 }
 
 #subheader-1{
     font-size:2vw;
-    margin-bottom:6vh;
+    margin-bottom:5vh;
 }
 
 #get-started-btn-container{
-height:2vh;
-
-display: flex;
-flex-direction: row;
-gap:4vh;
-margin-top:8vh;
+    height:2vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    
+    margin-top:6vh;
 }
 
 
 
 .get-started-btn{
-    height:11vh;
-    width:12vw;
+    height:9vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width:11vw;
     border-radius: 1vw;
-  
-  
+   
     border:0.3vw solid black;
-    font-size:1.3vw;
+    font-size:1.1vw;
     font-weight:bold;
     color:black;
     
     cursor:pointer;
-   background:linear-gradient(rgb(255, 102, 176), rgb(172, 172, 252));
+    text-decoration-line:none;
+    background:linear-gradient(rgb(255, 102, 176), rgb(172, 172, 252));
 }
 
+#get-started-link{
+    text-decoration-line: none;
+}
 #get-started-btn-1{
-margin-bottom:1vh;
+    margin-top:2vh;
+     text-decoration-line:none;
+     margin-right:3vh;
 }
 
 #get-started-btn-2{
-   
+    margin-top:2vh;
+    
 }
 .get-started-btn:hover{
     background-color: green;
 }
 
 #registered-link{
-    margin-bottom:10vh;
-}
-
-
-/*Section 2*/
-
-#section-2{
-background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
-}
-
-/*Features Section */
-
-#features-section{
     
-    
-    display:flex;
-    flex-direction:column;
-    
-}
-
-#features-header{
-    font-size:4vw;
-    margin-top:4vh;
-}
-
-#features-list{
-    list-style-type:disc; 
-    text-align: center;
-    justify-content: center;
-    margin-bottom:20rem;
-}
-
-.feature-items{
-    font-size:2vw;
-    margin-bottom:2vh;
-}
-
-
-
-/*End of Features Section*/
-
-
-
-/*How It Works Section */
-#how-it-works{
-    margin-bottom:10rem;
-    text-align: center;
-    align-items: center;
-}
-
-#how-it-works-container{
-    display:flex;
-    justify-content: center;
-}
-.circle{
-    border-radius: 50%;
-    height:36vh;
-    width:65vw;
-    font-size:1.7vw;
-    margin-right:5rem;
-    font-weight:500;
-    background-color: rgb(57, 139, 88);
-    justify-content: center;
-    display: flex;
-    text-align:center;
-    align-items: center;
-    border:10px solid black;
-    
-    
-}
-
-.arrow {
-    height:12rem;
-    width:12rem;
-    margin-right:10rem;
-    margin-top:26rem;
-    align-items:center;
-}
-
-
-
-/*End of How It Works Section*/
-
-
-
-/*Testimonial Section*/
-
-#testimonials{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    width:100%;
-    border:10px;
-    margin:auto;
-    border-top:10px solid black;
-    
-    
-}
-
-#testimonials-header{
-    font-size:4vw;
-    margin-top:8vh;
-    margin-bottom:4vh;
-}
-
-.testimonial-ad{
-   
- 
-   justify-content: center;
-   align-items: center;
-    display:flex;
-    border:0.5vw solid black;
-   width:85vw; 
-    margin:auto;
-    height:65vh;
-    margin-bottom:2vh;
-    text-align:center;
-
-  
-}
-
-.testimonial-img{
-    height:43vh;
-    width:21vw;
-    border:0.5vw solid black;
-    border-radius:50%;
-    float:left;
-   margin-right:1vh;
-    margin-left:3vh;
-
-    
+    margin-top:10vh;
 }
 
 
 
 
-.testimonial-text-container{
-float:right;
-margin-top:10rem;
-
-
-}
 
 
 
-.testimonial-ad-header{
-    font-size:3vw;
-    font-family: 'Courier New', Courier, monospace;
-    margin-top:3vh;
-   
-    margin-bottom:2.3vh;
-}
-.testimonial-text{
-    font-size:1.3vw;
-  width:55vw;
-  margin-left:8vh;
- 
-    color:black;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-
-
-
-/*End of Testimonial Section*/
-
-/*End of Section 3*/
 
 /*Footer Section */
 
@@ -282,7 +131,7 @@ margin-top:10rem;
     
     width:100%;
     height:11vh;
- background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+    background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
     border-top:.5vh solid black;
     display: flex;
     align-items: center;
