@@ -14,21 +14,24 @@
 </head>
 <body>
     
-    
-    
+    <audio src="assets\cascade-breathe-future-garage-412839.mp3">
+        <source src="assets\cascade-breathe-future-garage-412839.mp3" type="">
+    </audio>
+
+    <a href="index.html">
+                  <button class="feature-items" id="back-btn">Back</button>
+            </a>
     <div id="main-section">
         <!--Navbar-->
         <div id="navbar">
-             <a href="index.html">
-                  <button class="feature-items">Back</button>
-            </a>
+             
          
             
-            <a href="#home" class="feature-items"><i class="fa-solid fa-house"> </i>              Home </a>
-            <a href="#to-do-list" class="feature-items">To Do List <i class="fa-solid fa-clipboard-list"></i></a>
+            <a href="#home" class="feature-items" id="home-nav-item"><i class="fa-solid fa-house"> </i>              Home </a>
+            <a href="#to-do-list" class="feature-items" id="todo-list-nav-item" >To Do List <i class="fa-solid fa-clipboard-list"></i></a>
             <a href="#progress-tracker" id="progress-tracker-nav-item" class="feature-items">Progress Tracker <i class="fa-solid fa-spinner"></i></a>
-            <a href="#skill-history" class="feature-items">Skill History <i class="fa-solid fa-trophy"></i></a>
-            <a href="#settings" class="feature-items" >  <i class="fa-solid fa-gear"></i>   Settings</a>
+            <a href="#skill-history" class="feature-items"  id="skill-history-nav-item">Skill History <i class="fa-solid fa-trophy"></i></a>
+            <a href="#settings" class="feature-items" id="settings-nav-item">  <i class="fa-solid fa-gear"></i>   Settings</a>
             
             
             
@@ -38,6 +41,7 @@
         <!--End of Navbar-->
         
         
+    
         <section id="home" id="box">
            
             <h1 class="features-header">Home</h1>
@@ -153,7 +157,7 @@
                     
                     <img src="assets\arab-man-showing-thumbs-up-ai-generative-free-png.webp" id="progress-tracker-img" alt=""> 
                 </div>
-                
+            </section>
                 
                 
                 <section id="skill-history">
@@ -206,18 +210,30 @@
                     </ul>
                     
                     
-                    <div class="settings-box" id="settings-box-1">
-                        <h1  class="settings-section-header">Contact Info</h1>
+                   
+
+                      </section>
+                
+                
+                       <div class="settings-box" id="settings-box-1">
+                        <h1  class="settings-section-header">Account Info</h1>
+                       
                         <form action="" id="settings-form">
-                        <label for=""  class="settings-label" >First Name: </label>
+                         <div class="account-container">
+                            <label for=""  class="settings-label" >First Name: </label>
                         <input type="text" name="" id="" class="settings-input">
                        <label for=""  class="settings-label">Last Name: </label>
                         <input type="text" name="" id="" class="settings-input">
+                        </div>
+
+                         <div class="account-container">
                         <label for=""  class="settings-label">Email: </label>
                         <input type="text" name="" id="" class="settings-input">
                         <label for=""  class="settings-label">Password: </label>
                         <input type="text" name="" id="" class="settings-input">
+                        </div>
                         </form>
+
                          <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
                             <button  class="cancel-btn"  class="settings-btn">Cancel</button>
                         
@@ -238,8 +254,8 @@
                     </div>
                     <div class="settings-box" id="settings-box-2">
                         <h1 class="settings-section-header">Change Theme</h1>
-                        <h1>Theme Preferences</h1>
-                        <p>Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                        <h1 id="box-2-header" >Theme Preferences</h1>
+                        <p id="box-2-text">Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
                         <button id="theme-change-btn">Switch to Dark Mode</button>
                         
                         
@@ -274,8 +290,16 @@
                         <h1 class="settings-section-header">Help and Support</h1>
                         
                         <h1>Change Password</h1>
-                        <h1>Call Us</h1>
-                        <h1>Chat with Support 24/7</h1>
+                        <div id="help-support-container">
+ <a href="">
+                            <button id="call-btn">Call Us</button>
+                        </a>
+                        <a href="">
+                            <button id="chat-btn">Chat with Us</button>
+                        </a>
+                        </div>
+                       
+                        
                       
                        
                         
@@ -287,9 +311,7 @@
                     
                     
                     
-                </section>
-                
-                
+              
                 
                 
                 
