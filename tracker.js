@@ -1,7 +1,23 @@
 //Variables
 
 
+function changeMainBox(){
+     
+    const mainSection=document.getElementById("main-body");
+    const box=document.getElementById("settings-box-1");
 
+
+   console.log("53");
+}
+
+
+
+function changeSettingsBox(int){
+    const str="settings-box-"+int;
+    const settingsSection=document.getElementById("settings-box-container");
+    const selectedBox=document.getElementById(settings-box-1);
+   settingsSection.innerHTML=selectedBox.innerHTML;
+}
 
 
 
@@ -13,7 +29,6 @@ if(event.key==='Enter'){//Enter key
    console.log('done');
 }
 });
-
 
 
 $('todo-input').keypress(function(e){

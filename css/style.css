@@ -17,7 +17,7 @@ body{
 
 
 #section-1{
-    background:linear-gradient(rgb(143, 219, 229), rgb(244, 176, 104));
+    background:linear-gradient(rgb(10, 108, 157), rgb(83, 53, 85));
     height:100vh;
     border-bottom:0.3vh solid black;
     
@@ -43,8 +43,8 @@ body{
     text-align:center;
 }
 .lofi-girl-img{
-    height:44vh;
-    width:40vw;
+    height:46vh;
+    width:41vw;
     border:0.5vw solid black;
     border-radius:1vw;
     
@@ -79,7 +79,7 @@ body{
 
 
 .get-started-btn{
-    height:9vh;
+    height:9.5vh;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -91,10 +91,11 @@ body{
     font-size:1.1vw;
     font-weight:bold;
     color:black;
+   
     
     cursor:pointer;
     text-decoration-line:none;
-    background:linear-gradient(rgb(255, 102, 176), rgb(172, 172, 252));
+    background:linear-gradient(rgb(121, 57, 88), rgb(113, 113, 171));
 }
 
 #get-started-link{
@@ -133,7 +134,7 @@ body{
     
     width:100%;
     height:9vh;
- background-color:rgb(141, 116, 87);
+background:linear-gradient( rgb(83, 53, 85), rgb(63, 70, 74));
     border-top:.1vh solid black;
     display: flex;
     align-items: center;

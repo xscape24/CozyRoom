@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeroTracker</title>
+    <link rel="stylesheet" href="../css/tracker.css">
+    <script src="../tracker.js"></script>
+    <script src="https://kit.fontawesome.com/1553b227c3.js" crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <audio src="assets\cascade-breathe-future-garage-412839.mp3">
+        <source src="assets\cascade-breathe-future-garage-412839.mp3" type="">
+    </audio>
+    
+    <a href="index.html">
+        <button class="feature-items" id="back-btn" onclick="changeMainBox() ">Back</button>
+    </a>
+    <!--Main Section-->
+    <div id="main-section">
+        
+        <div id="navbar" onclick="changeMainBox">
+            
+            
+            
+            <a href="" class="feature-items" id="home-nav-item" onclick="changeMainBox()"><i class="fa-solid fa-house"> </i>              Home </a>
+            <a href="" class="feature-items" id="todo-list-nav-item" onclick="changeMainBox()">To Do List <i class="fa-solid fa-clipboard-list"></i></a>
+            <a href="" id="progress-tracker-nav-item" class="feature-items" onclick="changeMainBox()">Progress Tracker <i class="fa-solid fa-spinner"></i></a>
+            <a href="" class="feature-items"  id="skill-history-nav-item" onclick="changeMainBox()">Skill History <i class="fa-solid fa-trophy"></i></a>
+            <a href="" class="feature-items" id="settings-nav-item" onclick="changeMainBox()">  <i class="fa-solid fa-gear"></i>   Settings</a>
+            
+            
+            
+            
+            
+        </div>
+        
+        <div id="main-body">
+            
+            
+        </div>
+        
+        <!--End of Main Section-->
+    </div>
+    
+    
+    <section id="home" >
+        
+        <h1 class="features-header">Home</h1>
+        <p class="features-subheader">Track your goals, measure your progress, and build your skills one step at a time. Use the navigation above to explore your to-do list, progress tracker, and more.</p>
+        <form action="/actionpage.php" id="skill-form">
+            <label for="" class="skill-label">Please select a skill:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="meditation">Meditation </option>
+                <option value="exercise">Exercise </option>
+                <option value="reading">Reading </option>
+                <option value="studying">Studying </option>
+                <option value="breathwork">Breathwork </option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="" class="skill-label">Select habit frequency:</label>
+            <select  class="skill-dropdown" placeholder="--Please select an option--">
+                <option value="default">--Please select an option--" </option>
+                <option value="frequency1">Daily</option>
+                <option value="frequency2">Weekly</option>
+                <option value="frequency3">Monthly </option>
+                <option value="frequency4">--Custom-- </option>
+                
+            </select>
+            
+            <label for="" class="skill-label">Select Start and End Date:</label>
+            <div id="date-container">
+                <input type="date" name="" id="start-date" min="2025-09-05"> &dash;
+                <input type="date" name="" id="end-date">
+            </div>
+            
+            
+            
+            
+        </form>
+        
+        <button id="continue-btn">Continue</button>
+        
+    </section>
+    
+    
+    <section id="todo">
+        <h1 class="features-header"> To Do List</h1>
+        <ul id="to-do-list">
+            <input type="text" name="" placeholder="Enter your first item" id="todo-input">
+        </ul>
+        <div id="todo-btn-container">
+            <button class="to-do-list-btn" id="add-to-list-btn" onclick="addItem()">  <p id="add-item-text">+ Add Item </p> </button>
+        </div>
+    </section>
+    
+    
+    <section id="progress-tracker">
+        <div>
+            <h1 class="features-header">Progress Tracker</h1>
+            <p  class="features-subheader">Congrats, you've completed 4/10 habits. Keep going!</p>
+            
+            <div id="progress-bar-container">
+                <div id="main-section">
+                    <table id="progress-tracker-table">
+                        <h1 id="habits-list-header">Habits List</h1>    
+                        <tr>
+                            <th class="pt-item">Meditation</th>
+                            <td class="pt-data-cell"><span>&#10004;</td>
+                            </tr>
+                            <tr>
+                                <th class="pt-item">Exercise</th>
+                                <td class="pt-data-cell"> <span>&#10004;</td>
+                                </tr>
+                                <tr>
+                                    <th class="pt-item">Reading</th>
+                                    <td class="pt-data-cell"><span>&#10004;</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="pt-item">Journaling</th>
+                                        <td class="pt-data-cell"><span>&#10004;</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="pt-item" >Coding</th>
+                                            <td class="pt-data-cell"><span>&#10004;</td>
+                                            </tr>
+                                            <tr>
+                                                <th class="pt-item">Piano</th>
+                                                <td class="pt-data-cell"><span>&#10004;</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="pt-item">Chess</th>
+                                                    <td class="pt-data-cell"><span>&#10004;</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th class="pt-item">Singing</th>
+                                                        <td class="pt-data-cell"><span>&#10004;</td>
+                                                        </tr>
+                                                    </table>
+                                                    
+                                                </div>
+                                                
+                                                <img src="../assets\arab-man-showing-thumbs-up-ai-generative-free-png.webp" id="progress-tracker-img" alt=""> 
+                                            </div>
+                                        </section>
+                                        
+                                        
+                                        <section id="skill-history">
+                                            
+                                            <h1 class="features-header" id="skill-history-header">Skill History <img src="../assets\8348232 (1).png" alt="Image of trophy" id="trophy-img"></h1>
+                                            <p  class="features-subheader">Here you can review past milestones.</p>
+                                            <div id="skill-history-container">
+                                                <table id="skill-history-table">
+                                                    
+                                                    <tr>
+                                                        <th>Meditation</th>
+                                                        <td class="sh-data-cell"><div class="data"></div></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Exercise</th>
+                                                        <td class="sh-data-cell"><div class="data"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>Reading</th>
+                                                            <td class="sh-data-cell"><div class="data"></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Journaling</th>
+                                                                <td class="sh-data-cell"><div class="data"></td>
+                                                                </tr>
+                                                                
+                                                            </table>
+                                                            
+                                                            <img id="skill-history-img" src="../assets\businessman-and-gold-trophy-on-ladder-of-success-png.webp" alt="Image of Success Ladder">
+                                                        </div>
+                                                        
+                                                        
+                                                    </section>
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    
+                                                    <section id="settings">
+                                                        
+                                                        <div id="settings-section-header">
+                                                            <h1 class="features-header">Settings  <img src="../assets\563541 (1).png" alt="Settings Icon" id="settings-icon" ></h1>
+                                                        </div>
+                                                        
+                                                        
+                                                        
+                                                        <ul id="settings-list">
+                                                            <li class="settings-items" onclick="changeSettingsBox(1)">Account Information</li>
+                                                            <li class="settings-items" onclick="changeSettingsBox(2)">Change Theme</li>
+                                                            <li class="settings-items" onclick="changeSettingsBox(3)">Privacy Settings</li>
+                                                            <li class="settings-items" onclick="changeSettingsBox(4)"id="notification-btn">Notification Preferences</li>
+                                                            <li class="settings-items"onclick="changeSettingsBox(5)" id="help-support-btn">Help & Support</li>
+                                                        </ul>
+                                                        <div id="settings-box-container"> 
+                                                        </div>
+                                                        
+                                                    </section>
+                                                    
+                                                    
+                                                    <div class="settings-box" id="settings-box-1">
+                                                        <h1  class="settings-section-header">Account Info</h1>
+                                                        
+                                                        <form action="" id="settings-form">
+                                                            <div class="account-container">
+                                                                <label for=""  class="settings-label" >First Name: </label>
+                                                                <input type="text" name="" id="" class="settings-input">
+                                                                <label for=""  class="settings-label">Last Name: </label>
+                                                                <input type="text" name="" id="" class="settings-input">
+                                                            </div>
+                                                            
+                                                            <div class="account-container">
+                                                                <label for=""  class="settings-label">Email: </label>
+                                                                <input type="text" name="" id="" class="settings-input">
+                                                                <label for=""  class="settings-label">Password: </label>
+                                                                <input type="text" name="" id="" class="settings-input">
+                                                            </div>
+                                                        </form>
+                                                        
+                                                        <button  class="save-changes-btn" class="settings-btn">Save Changes</button>
+                                                        <button  class="cancel-btn"  class="settings-btn">Cancel</button>
+                                                        
+                                                        <h1 class="connected-accounts-header" >Connected Accounts</h1>
+                                                        <ul id="social-media-list">
+                                                            <li class="social-media-item" id="google-item">Connect to Google</li>
+                                                            <li class="social-media-item" id="apple-item">Connect to Apple</li>
+                                                            <li class="social-media-item" id="facebook-item">Connect to Facebook</li>
+                                                            
+                                                        </ul>
+                                                        
+                                                        <button class="logout-btn">Log Out</button>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                                                    <div class="settings-box" id="settings-box-2">
+                                                        <h1 class="settings-section-header">Change Theme</h1>
+                                                        <h1 id="box-2-header" >Theme Preferences</h1>
+                                                        <p id="box-2-text">Choose how GitHub looks to you. Select a single theme, or sync with your system and automatically switch between day and night themes. Selections are applied immediately and saved automatically.</p>
+                                                        <button id="theme-change-btn">Switch to Dark Mode</button>
+                                                    </div>
+                                                    
+                                                    <div class="settings-box" id="settings-box-3">
+                                                        <h1 class="settings-section-header">Privacy Settings</h1>
+                                              
+                                                    </div>
+
+
+
+                                                    <div class="settings-box" id="settings-box-4">
+                                                        <h1 class="settings-section-header">Notification Preferences</h1>
+                                                    </div>
+
+
+
+                                                    <div class="settings-box" id="settings-box-5">
+                                                        <h1 class="settings-section-header">Help and Support</h1>
+                                                        
+                                                        <h1>Change Password</h1>
+                                                        <div id="help-support-container">
+                                                            <a href="">
+                                                                <button id="call-btn">Call Us</button>
+                                                            </a>
+                                                            <a href="">
+                                                                <button id="chat-btn">Chat with Us</button>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    
+                                         
+                                                    <div id="footer">
+                                                        <div id="footer-container">
+                                                            <p id="footer-text">© 2025, Built with ❤️ by Eben Nduwimana</p>
+                                                            
+                                                            
+                                                            <a href="https://www.linkedin.com/in/eben-nduwimana/">
+                                                                <img src="../assets\hd-linkedin-square-black-icon-transparent-background-7017516949739946gsykkwdmd (1).png" id="linkedn-icon" class="contact-badge"  alt="">
+                                                            </a>
+                                                            <a href="https://github.com/xscape24">
+                                                                <img src="../assets\icons8-github-30.png" id="github-icon" class="contact-badge" alt="">
+                                                            </a>
+                                                            
+                                                            <a href="https://github.com/xscape24">
+                                                                <img src="../assets\images.png" id="twitter-icon" class="contact-badge" alt="">
+                                                            </a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </body>
+                                                </html>
