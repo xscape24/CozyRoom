@@ -11,15 +11,17 @@ html{
 
 body{
     height:300vh;
-background: tan;
+  background-color: rgb(63, 31, 63);
     font-family:'Times New Roman', Times, serif;
     
 }
 
 #back-btn{
-    height:1vh;
-    width:1vh;
+    height:7vh;
+    width:12vh;
     background-color: #1870e2;
+    border-radius: 0;
+    margin-top:2vh;
 }
 
 button{
@@ -51,7 +53,7 @@ button{
     
     
     width:160vw;
-    height:12vh;
+    height:14vh;
    
     
     display: flex;
@@ -61,7 +63,8 @@ button{
     margin-top:1vh;
     margin-bottom:2vh;
     border-right:0;
-    border-radius:0.1vw;
+    border-radius:0vw;
+    padding-top:1vh;
     
     
     
@@ -82,13 +85,14 @@ button{
 
 .feature-items{
     
-    
+    display: flex;
+    justify-content: center;
     height: 14vh;
     width:19vw;
     align-items:center;
     text-decoration-line:none;
     color:black;
-    padding-top:2vh;
+
     font-size:2vw;
     font-weight: 500;
     flex-direction: row;
@@ -98,13 +102,13 @@ button{
 }
 
 #home-nav-item{
-    border-top-left-radius: 1vw;
-    border-bottom-left-radius: 1vw;
+    border-top-left-radius: 0.5vw;
+    border-bottom-left-radius: 0.5vw;
     border-right:0;
 }
 #settings-nav-item{
-    border-top-right-radius: 1vw;
-    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 0.5vw;
+    border-bottom-right-radius: 0.5vw;
     
 }
 
@@ -122,7 +126,7 @@ button{
     
 }
 section{
-    background:rgb(98, 144, 164);
+    background:rgb(77, 103, 115);
     border:0.5vw solid black;
     
     margin-top:0;

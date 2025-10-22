@@ -1,10 +1,9 @@
 //Variables
 
-
-function changeMainBox(){
+console.log("4");
+function c(){
      
-    const mainSection=document.getElementById("main-body");
-    const box=document.getElementById("settings-box-1");
+
 
 
    console.log("53");
@@ -22,18 +21,8 @@ function changeSettingsBox(int){
 
 
 //Event Listeners
-document.getElementById('todo-input').addEventListener('keydown',function (event){
-if(event.key==='Enter'){//Enter key
-   event.preventDefault();
-   document.getElementById('add-to-list-btn').click();
-   console.log('done');
-}
-});
 
 
-$('todo-input').keypress(function(e){
-if(e.keyCode===13){$('add-to-list-btn').click()}
-});
 
 
 
